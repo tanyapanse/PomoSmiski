@@ -1,38 +1,64 @@
-.App {
+@font-face {
+  font-family: "MyFont";
+  src: url("/Pixellari.ttf") format("truetype");
+}
+
+body {
   text-align: center;
+  background: #dce4bf;
+  color: #909b70;
+  font-family: "MyFont", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.App {
+    display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;      /* horizontal centering */
+  justify-content: center;  /* vertical centering */
+  height: 100vh; 
+}
+
+h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 90px;
+  margin: 15px;
+}
+
+.mode {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+}
+
+img {
+  width: 130px;
+}
+
+.middle {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+   align-items: center;  
+  height: 30vh; 
 }
 
-.App-link {
-  color: #61dafb;
+.middle img {
+  width: 180px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
 }
